@@ -29,11 +29,11 @@ We used 9 extractive summarization algorithms and analysed their Rouge scores. O
  
 From our topic modelling implementation, we found an overlap in topics relating to transportation and security, as well as wildlife and emvironmental conservation (Image 1 and 2). We realised that LDA's results focuses heavily on employment, government, grants and taxes compared to BERTopic, which focuses on education, technology and immigration.
 
-<img width="605" alt="image" src="https://user-images.githubusercontent.com/66090549/165490315-97083fdb-4977-46d1-8c42-bd129a92a402.png">
 Image 1
+<img width="605" alt="image" src="https://user-images.githubusercontent.com/66090549/165490315-97083fdb-4977-46d1-8c42-bd129a92a402.png">
 
-<img width="605" alt="image" src="https://user-images.githubusercontent.com/66090549/165490394-79bc4283-587e-475a-af24-2fa79d6aff89.png">
 Image 2
+<img width="605" alt="image" src="https://user-images.githubusercontent.com/66090549/165490394-79bc4283-587e-475a-af24-2fa79d6aff89.png">
 
 When analysing the coherence score, BERTopic performed better with a higher coherence score of 0.61276, compared to LDA of 0.48869. This could be because LDA ignores semantic relationshipd among words due to its Bag-of-Words representation. On the other hand, BERTopic can be fitted to embedding models which are used to cluster sematically similar documents. However, BERTopic uses a soft clustering method where documents which are not assigned to any clusters will form a -1 topic which could also be another reason for its high coherence score. We can propose human evaluation to better assess the 2 models' performance.
 
